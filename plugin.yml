@@ -1,0 +1,27 @@
+name: Plugin1
+main: com.worthwhilegames.craftbukkit.plugin1.Plugin1
+version: 1.0
+
+commands:
+   bling:
+      description: Bling Command.
+      usage: /bling
+      permission: plugin1.bling
+   solid:
+      description: Solid Command.
+      usage: /solid
+      permission: plugin1.solid
+
+permissions:
+  plugin1.*:
+    description: Gives access to all plugin1 commands
+    children:
+      plugin1.bling: true
+      plugin1.solid: true
+  plugin1.bling:
+    description: Drops a stack of diamonds in your inventory
+    default: true
+  plugin1.solid:
+    description: Drops a stack of obsidian in your inventory
+    default: true
+
