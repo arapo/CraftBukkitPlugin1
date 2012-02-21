@@ -1,0 +1,63 @@
+# Plan configuration.
+#
+# Stores information about each plan.
+#
+
+Plans:
+    # must be one word
+    Miner:
+        fullname: Miner
+        shortname: M
+        ChatColour: DARK_GRAY
+        chat-display: full
+        #max-level: 10
+        #slots: 10
+        leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+        income-progression-equation: baseincome*((1.05)^(joblevel-1))
+        experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+        Break:
+            STONE:
+                income: 2.0
+                experience: 2.0
+            COAL_ORE:
+                income: 3.0
+                experience: 3.0
+            REDSTONE_ORE:
+                income: 3.0
+                experience: 3.0
+            IRON_ORE: 
+                income: 4.0
+                experience: 4.0
+            GOLD_ORE:
+                income: 5.0
+                experience: 5.0
+            LAPIS_ORE:
+                income: 5.0
+                experience: 5.0
+            DIAMOND_ORE:
+                income: 6.0
+                experience: 6.0
+            OBSIDIAN: 
+                income: 7.5
+                experience: 7.5
+            MOSSY_COBBLESTONE:
+                income: 6.0
+                experience: 6.0
+        Place:
+            RAILS:
+                income: 2.0
+                experience: 2.0
+            IRON_ORE:
+                income: -5.0
+                experience: -5.0
+            GOLD_ORE:
+                income: -6.0
+                experience: -6.0
+        Kill:
+            Player:
+                income: 7.5
+                experience: 7.5
+        custom-kill:
+            Miner:
+                income: 10.0
+                experience: 10.0

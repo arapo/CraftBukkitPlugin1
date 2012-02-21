@@ -11,12 +11,19 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.worthwhilegames.craftbukkit.plugin1.config.Plugin1Config;
+import com.worthwhilegames.craftbukkit.plugin1.config.container.Plan;
+
 public class Plugin1 extends JavaPlugin {
 	
 	Logger log = Logger.getLogger("Minecraft");
+	private Plugin1Config plugin1Config;
 	
-    public void onEnable(){ 
-    	log.info("Plugin1 has been enabled!");
+    public void onEnable(){
+    	
+    	plugin1Config = new Plugin1Config(this);
+    	
+    	log.info("Plugin1 has been enabled and configured!");
     }
      
     public void onDisable(){ 
